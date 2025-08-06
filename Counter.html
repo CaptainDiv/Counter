@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>counter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+	<body style="background-color:powderblue;">
+
+	<h1 style="text-align:center;">A COUNTER APP</h1>
+	<p style="color:blue;">First html project</p>
+	<h1 id="counter">0</h1>
+	<button onclick="incrementCounter()">INCREMENT</button>
+	<button onclick="decrementCounter()">DECREMENT</button>
+	<button onclick="resetCounter()">RESET</button>
+
+
+
+<script>
+let counter = 0;
+const countDisplay = document.getElementById('counter')
+
+function incrementCounter() {
+counter++;
+countDisplay.textContent = counter;
+}
+
+function decrementCounter() {
+counter--;
+countDisplay.textContent = counter;
+}
+
+function resetCounter() {
+counter = 0
+countDisplay.textContent = counter;
+}
+</script>
+
+</body>
+</html>
